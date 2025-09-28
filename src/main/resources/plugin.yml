@@ -1,0 +1,65 @@
+name: StaffOnSteroids
+version: 1.0.0
+main: me.rogueliver.staffonsteroids.StaffOnSteroids
+api-version: 1.20
+authors: [ RL ]
+description: Advanced staff management plugin
+
+commands:
+  staffchat:
+    description: Toggle staff chat or send a staff message
+    usage: /staffchat [message]
+    permission: staffonsteroids.staff
+    aliases: [sc]
+  
+  ban:
+    description: Ban a player
+    usage: /ban <player> [reason]
+    permission: staffonsteroids.staff
+  
+  ipban:
+    description: IP ban a player
+    usage: /ipban <player> [reason]
+    permission: staffonsteroids.staff
+  
+  mute:
+    description: Mute a player
+    usage: /mute <player> [reason]
+    permission: staffonsteroids.staff
+  
+  ipmute:
+    description: IP mute a player
+    usage: /ipmute <player> [reason]
+    permission: staffonsteroids.staff
+  
+  kick:
+    description: Kick a player
+    usage: /kick <player> [reason]
+    permission: staffonsteroids.staff
+  
+  ipkick:
+    description: IP kick a player
+    usage: /ipkick <player> [reason]
+    permission: staffonsteroids.staff
+  
+  vanish:
+    description: Toggle vanish mode
+    usage: /vanish [player]
+    permission: staffonsteroids.admin
+    aliases: [v]
+  
+  freeze:
+    description: Freeze a player
+    usage: /freeze <player>
+    permission: staffonsteroids.admin
+
+permissions:
+  staffonsteroids.staff:
+    description: Access to punishment commands
+    default: op
+  
+  staffonsteroids.admin:
+    description: Access to all staff features
+    default: op
+    children:
+      - staffonsteroids.staff

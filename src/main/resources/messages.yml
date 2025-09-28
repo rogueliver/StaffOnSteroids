@@ -1,0 +1,56 @@
+prefix: "&8[&cSOS&8] "
+
+errors:
+  no-permission: "&cYou don't have permission to use this command!"
+  player-only: "&cOnly players can use this command!"
+  player-not-found: "&cPlayer not found!"
+  player-not-online: "&cPlayer not found or not online!"
+  cannot-target-admin: "&cYou cannot target an admin!"
+  usage-ban: "&cUsage: /ban <player> [reason]"
+  usage-ipban: "&cUsage: /ipban <player> [reason]"
+  usage-mute: "&cUsage: /mute <player> [reason]"
+  usage-ipmute: "&cUsage: /ipmute <player> [reason]"
+  usage-kick: "&cUsage: /kick <player> [reason]"
+  usage-ipkick: "&cUsage: /ipkick <player> [reason]"
+  usage-freeze: "&cUsage: /freeze <player>"
+  console-specify-player: "&cConsole must specify a player!"
+  no-kickable-players: "&cNo kickable players found with that IP!"
+
+success:
+  banned: "&aSuccessfully banned {player} for: {reason}"
+  ip-banned: "&aSuccessfully IP banned {player} for: {reason}"
+  muted: "&aSuccessfully muted {player} for: {reason}"
+  unmuted: "&aSuccessfully unmuted {player}"
+  ip-muted: "&aSuccessfully IP muted {player} for: {reason}"
+  ip-unmuted: "&aSuccessfully IP unmuted {player}"
+  kicked: "&aSuccessfully kicked {player} for: {reason}"
+  ip-kicked: "&aSuccessfully IP kicked {count} player(s) for: {reason}"
+  frozen: "&aSuccessfully frozen {player}"
+  unfrozen: "&aSuccessfully unfrozen {player}"
+  vanish-enabled: "&a{player} is now vanished!"
+  vanish-disabled: "&a{player} is no longer vanished!"
+
+info:
+  staff-chat-enabled: "&eStaff chat enabled!"
+  staff-chat-disabled: "&eStaff chat disabled!"
+  vanished: "&eYou are now vanished!"
+  unvanished: "&eYou are no longer vanished!"
+  frozen: "&cYou have been frozen! Do not log out or you will be banned!"
+  unfrozen: "&aYou have been unfrozen!"
+  muted: "&cYou have been muted. Reason: {reason}"
+  ip-muted: "&cYour IP has been muted. Reason: {reason}"
+  ip-unmuted: "&aYour IP has been unmuted!"
+  you-are-muted: "&cYou are muted!"
+  ip-is-muted: "&cYour IP is muted!"
+  you-are-frozen: "&cYou are frozen!"
+  
+kick-messages:
+  kicked: "&cYou have been kicked. Reason: {reason}"
+  ip-kicked: "&cYour IP has been kicked. Reason: {reason}"
+  
+ban-messages:
+  banned: "&cYou have been banned. Reason: {reason}"
+  ip-banned: "&cYou have been IP banned. Reason: {reason}"
+  freeze-quit: "&cLogging out while frozen"
+
+default-reason: "No reason specified"

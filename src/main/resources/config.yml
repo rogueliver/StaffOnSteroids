@@ -1,0 +1,33 @@
+######################################
+#||  StaffOnSteroids Configuration ||#
+#       For Support, visit my        #
+#        Discord: rogueliver         #
+#    GitHub: github.com/rogueliver   #
+######################################
+
+database:
+  host: localhost
+  port: 3306
+  database: staffonsteroids
+  username: root
+  password: password
+  pool-size: 10
+  connection-timeout: 30000
+  idle-timeout: 600000
+  max-lifetime: 1800000
+
+settings:
+  save-interval: 300
+  auto-save: true
+  debug: false
+  
+staff-chat:
+  format: "&8[&cStaff&8] &f{player}: {message}"
+  
+vanish:
+  hide-from-tab: true
+  silent-join-quit: true
+  
+freeze:
+  ban-on-quit: true
+  movement-message-interval: 5
