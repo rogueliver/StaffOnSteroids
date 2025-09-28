@@ -1,4 +1,4 @@
-prefix: "&8[&cSOS&8] "
+prefix: "&8[&cStaff&8] "
 
 errors:
   no-permission: "&cYou don't have permission to use this command!"
@@ -13,15 +13,36 @@ errors:
   usage-kick: "&cUsage: /kick <player> [reason]"
   usage-ipkick: "&cUsage: /ipkick <player> [reason]"
   usage-freeze: "&cUsage: /freeze <player>"
+  usage-tempban: "&cUsage: /tempban <player> <duration> [reason]"
+  usage-tempipban: "&cUsage: /tempipban <player> <duration> [reason]"
+  usage-tempmute: "&cUsage: /tempmute <player> <duration> [reason]"
+  usage-tempipmute: "&cUsage: /tempipmute <player> <duration> [reason]"
   console-specify-player: "&cConsole must specify a player!"
   no-kickable-players: "&cNo kickable players found with that IP!"
+  invalid-duration: "&cInvalid duration format! Use: 1d, 2h, 30m, 45s"
+  usage-unban: "&cUsage: /unban <player>"
+  usage-unipban: "&cUsage: /unipban <player|ip>"
+  usage-unmute: "&cUsage: /unmute <player>"
+  usage-unipmute: "&cUsage: /unipmute <player|ip>"
+  usage-unfreeze: "&cUsage: /unfreeze <player>"
+  usage-unvanish: "&cUsage: /unvanish <player>"
+  player-not-banned: "&cPlayer is not banned!"
+  ip-not-banned: "&cIP address is not banned!"
+  player-not-muted: "&cPlayer is not muted!"
+  ip-not-muted: "&cIP address is not muted!"
+  player-not-frozen: "&cPlayer is not frozen!"
+  player-not-vanished: "&cPlayer is not vanished!"
 
 success:
   banned: "&aSuccessfully banned {player} for: {reason}"
+  temp-banned: "&aSuccessfully temp banned {player} for {duration} - Reason: {reason}"
   ip-banned: "&aSuccessfully IP banned {player} for: {reason}"
+  temp-ip-banned: "&aSuccessfully temp IP banned {player} for {duration} - Reason: {reason}"
   muted: "&aSuccessfully muted {player} for: {reason}"
+  temp-muted: "&aSuccessfully temp muted {player} for {duration} - Reason: {reason}"
   unmuted: "&aSuccessfully unmuted {player}"
   ip-muted: "&aSuccessfully IP muted {player} for: {reason}"
+  temp-ip-muted: "&aSuccessfully temp IP muted {player} for {duration} - Reason: {reason}"
   ip-unmuted: "&aSuccessfully IP unmuted {player}"
   kicked: "&aSuccessfully kicked {player} for: {reason}"
   ip-kicked: "&aSuccessfully IP kicked {count} player(s) for: {reason}"
@@ -29,6 +50,10 @@ success:
   unfrozen: "&aSuccessfully unfrozen {player}"
   vanish-enabled: "&a{player} is now vanished!"
   vanish-disabled: "&a{player} is no longer vanished!"
+  unbanned: "&aSuccessfully unbanned {player}"
+  ip-unbanned: "&aSuccessfully unbanned IP for {player}"
+  unmuted: "&aSuccessfully unmuted {player}"
+  ip-unmuted: "&aSuccessfully unmuted IP for {player}"
 
 info:
   staff-chat-enabled: "&eStaff chat enabled!"
@@ -43,14 +68,16 @@ info:
   you-are-muted: "&cYou are muted!"
   ip-is-muted: "&cYour IP is muted!"
   you-are-frozen: "&cYou are frozen!"
-  
+
 kick-messages:
   kicked: "&cYou have been kicked. Reason: {reason}"
   ip-kicked: "&cYour IP has been kicked. Reason: {reason}"
-  
+
 ban-messages:
   banned: "&cYou have been banned. Reason: {reason}"
+  temp-banned: "&cYou have been temporarily banned for {duration}. Reason: {reason}"
   ip-banned: "&cYou have been IP banned. Reason: {reason}"
-  freeze-quit: "&cLogging out while frozen"
+  temp-ip-banned: "&cYou have been temporarily IP banned for {duration}. Reason: {reason}"
+  freeze-quit: "&cLogging out while frozen (1 hour ban)"
 
 default-reason: "No reason specified"

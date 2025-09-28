@@ -8,26 +8,36 @@ Made for Spigot/Paper 1.20.4+
 
 - **Staff Chat**: Private communication channel for staff members
 - **Player Punishments**: Ban, kick, and mute players with IP-based variants
+- **Temporary Punishments**: Time-based bans and mutes with automatic expiration
 - **Vanish System**: Hide staff members from regular players
-- **Freeze System**: Prevent player movement with automatic ban on disconnect
+- **Freeze System**: Prevent player movement with 1-hour ban on disconnect
 - **MySQL Database**: Persistent data storage with connection pooling
 - **Configurable Messages**: Fully customizable messages and formats
-- **Permission-based Access**: Granular permission control for different staff levels
 
 ## Commands
 
 ### Staff Commands (staffonsteroids.staff)
 - `/staffchat [message]` - Toggle staff chat or send staff message (alias: `/sc`)
 - `/ban <player> [reason]` - Ban a player
+- `/tempban <player> <duration> [reason]` - Temporarily ban a player
 - `/ipban <player> [reason]` - IP ban a player
+- `/tempipban <player> <duration> [reason]` - Temporarily IP ban a player
 - `/mute <player> [reason]` - Mute/unmute a player
+- `/tempmute <player> <duration> [reason]` - Temporarily mute a player
 - `/ipmute <player> [reason]` - IP mute/unmute a player
+- `/tempipmute <player> <duration> [reason]` - Temporarily IP mute a player
 - `/kick <player> [reason]` - Kick a player
 - `/ipkick <player> [reason]` - Kick all players with the same IP
+- `/unban <player>` - Unban a player
+- `/unipban <player|ip>` - Unban an IP address
+- `/unmute <player>` - Unmute a player
+- `/unipmute <player|ip>` - Unmute an IP address
 
 ### Admin Commands (staffonsteroids.admin)
 - `/vanish [player]` - Toggle vanish mode (alias: `/v`)
 - `/freeze <player>` - Freeze/unfreeze a player
+- `/unfreeze <player>` - Unfreeze a player
+- `/unvanish <player>` - Disable vanish for a player
 
 ## Permissions
 

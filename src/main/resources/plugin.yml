@@ -37,20 +37,70 @@ commands:
     usage: /kick <player> [reason]
     permission: staffonsteroids.staff
   
+  tempban:
+    description: Temporarily ban a player
+    usage: /tempban <player> <duration> [reason]
+    permission: staffonsteroids.staff
+
+  tempipban:
+    description: Temporarily IP ban a player
+    usage: /tempipban <player> <duration> [reason]
+    permission: staffonsteroids.staff
+
+  tempmute:
+    description: Temporarily mute a player
+    usage: /tempmute <player> <duration> [reason]
+    permission: staffonsteroids.staff
+
+  tempipmute:
+    description: Temporarily IP mute a player
+    usage: /tempipmute <player> <duration> [reason]
+    permission: staffonsteroids.staff
+
   ipkick:
     description: IP kick a player
     usage: /ipkick <player> [reason]
     permission: staffonsteroids.staff
-  
+
   vanish:
     description: Toggle vanish mode
     usage: /vanish [player]
     permission: staffonsteroids.admin
     aliases: [v]
-  
+
   freeze:
     description: Freeze a player
     usage: /freeze <player>
+    permission: staffonsteroids.admin
+
+  unban:
+    description: Unban a player
+    usage: /unban <player>
+    permission: staffonsteroids.staff
+
+  unipban:
+    description: Unban an IP address
+    usage: /unipban <player|ip>
+    permission: staffonsteroids.staff
+
+  unmute:
+    description: Unmute a player
+    usage: /unmute <player>
+    permission: staffonsteroids.staff
+
+  unipmute:
+    description: Unmute an IP address
+    usage: /unipmute <player|ip>
+    permission: staffonsteroids.staff
+
+  unfreeze:
+    description: Unfreeze a player
+    usage: /unfreeze <player>
+    permission: staffonsteroids.admin
+
+  unvanish:
+    description: Disable vanish for a player
+    usage: /unvanish <player>
     permission: staffonsteroids.admin
 
 permissions:
